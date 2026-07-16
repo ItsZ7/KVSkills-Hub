@@ -1,0 +1,769 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=================================
+        ENTRANCE ANIMATION
+==================================*/
+
+.fade-in-item{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp .7s ease forwards;
+}
+
+/* Susunan muncul: logo -> tajuk -> subtajuk -> 3 butang */
+
+.logo.fade-in-item{ animation-delay: .1s; }
+.title.fade-in-item{ animation-delay: .25s; }
+.subtitle.fade-in-item{ animation-delay: .4s; }
+
+.row .fade-in-item:nth-child(1) { animation-delay: .55s; }
+.row .fade-in-item:nth-child(2) { animation-delay: .7s; }
+.row .fade-in-item:nth-child(3) { animation-delay: .85s; }
+
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*=================================
+        LOADING OVERLAY
+==================================*/
+
+.loading-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .95);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+
+.loading-overlay.active{
+    display: flex;
+    opacity: 1;
+}
+
+.spinner{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #d62828;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+}
+
+.loading-text{
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+body{
+
+    background:linear-gradient(135deg,#f8f9fa,#e9ecef);
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    width:130px;
+
+}
+
+.title{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#666;
+
+    margin-top:10px;
+
+}
+
+.menu-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-decoration:none;
+
+    height:170px;
+
+    border-radius:20px;
+
+    background:#d62828;
+
+    color:white;
+
+    font-size:23px;
+
+    font-weight:600;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.menu-btn i{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.menu-btn:hover{
+
+    transform:translateY(-10px);
+
+    background:#b30000;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+/* ===========================
+   MAKLUMAT KVSKILLS
+===========================*/
+
+.dashboard-card{
+
+display:block;
+
+text-align:center;
+
+text-decoration:none;
+
+background:#ffffff;
+
+border-radius:20px;
+
+padding:40px;
+
+color:#222;
+
+transition:.3s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.dashboard-card:hover{
+
+background:#dc3545;
+
+color:#fff;
+
+transform:translateY(-8px);
+
+}
+
+.dashboard-card i{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+color:#dc3545;
+
+transition:.3s;
+
+}
+
+.dashboard-card:hover i{
+
+color:white;
+
+}
+
+.dashboard-card h3{
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+.dashboard-card p{
+
+margin:0;
+
+}
+
+.dashboard-header{
+
+background:linear-gradient(135deg,#dc3545,#b71c1c);
+
+padding:60px 0;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.dashboard-header h1{
+
+font-weight:700;
+
+}
+/*=================================
+        LOKASI
+==================================*/
+
+.lokasi-card{
+
+border:none;
+
+border-radius:18px;
+
+transition:.3s;
+
+}
+
+.lokasi-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.lokasi-card h3{
+
+font-weight:700;
+
+color:#dc3545;
+
+}
+
+.lokasi-card p{
+
+font-size:15px;
+
+}
+/*=================================
+        KEPUTUSAN
+==================================*/
+
+.table{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.table th{
+
+text-align:center;
+
+}
+
+.table td{
+
+vertical-align:middle;
+
+}
+
+.form-control{
+
+border-radius:12px;
+
+padding:12px;
+
+}
+
+.badge{
+
+font-size:14px;
+
+padding:8px 15px;
+
+}
+/*=================================
+        SENARAI PESERTA
+==================================*/
+
+.table{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table th{
+    text-align:center;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+.form-select{
+    border-radius:12px;
+}
+/*=================================
+      MUAT TURUN LOGO
+==================================*/
+
+.logo-preview{
+
+max-width:280px;
+
+transition:.3s;
+
+}
+
+.logo-preview:hover{
+
+transform:scale(1.05);
+
+}
+
+.btn-lg{
+
+border-radius:12px;
+
+font-weight:600;
+
+}
+
+.card{
+
+border-radius:20px;
+
+}
+
+.card ul{
+
+padding-left:20px;
+
+}
+
+.card ul li{
+
+margin-bottom:10px;
+
+}
+/*==================================================
+            DASHBOARD JURULATIH V2
+==================================================*/
+
+.dashboard-header{
+    background:linear-gradient(135deg,#b30000,#d62828);
+    color:#fff;
+    padding:70px 0;
+    text-align:center;
+}
+
+.dashboard-header h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.dashboard-header p{
+    font-size:18px;
+    opacity:.95;
+}
+
+.dashboard-card{
+
+    display:block;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#d62828;
+
+    color:#ffffff;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.dashboard-card i{
+
+    font-size:55px;
+
+    color:#d62828;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+
+}
+
+.dashboard-card:hover i{
+
+    color:#ffffff;
+
+}
+
+.dashboard-card h4{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin:0;
+
+}
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+.rounded-circle{
+
+    border:6px solid #d62828;
+
+    object-fit:cover;
+
+}
+
+section h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:25px;
+
+}
+
+/*=========================
+        BUTTON
+=========================*/
+
+.btn-danger{
+
+    background:#d62828;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+.btn-danger:hover{
+
+    background:#b30000;
+
+}
+
+/*=========================
+       RESPONSIVE
+=========================*/
+
+@media(max-width:991px){
+
+.dashboard-header{
+
+padding:50px 20px;
+
+}
+
+.dashboard-header h1{
+
+font-size:32px;
+
+}
+
+.dashboard-card{
+
+padding:25px;
+
+}
+
+section h2{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.dashboard-header h1{
+
+font-size:28px;
+
+}
+
+.dashboard-card i{
+
+font-size:45px;
+
+}
+
+.dashboard-card h4{
+
+font-size:18px;
+
+}
+
+}
+
+/* ===========================
+   LOGIN PAGE
+===========================*/
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.login-back {
+    align-self: flex-start;
+    margin-left: calc(50% - 225px);
+    margin-bottom: 20px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.login-back i { margin-right: 8px; }
+
+.login-back:hover {
+    color: #d62828;
+    transform: translateX(-4px);
+    display: inline-block;
+}
+
+.login-logo {
+    width: 90px;
+    margin-bottom: 12px;
+}
+
+.login-brand {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 40px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+.login-card h2 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.login-card .login-underline {
+    width: 50px;
+    height: 4px;
+    background: #d62828;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.login-card label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.login-input-group {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    transition: .25s;
+}
+
+.login-input-group:focus-within {
+    border-color: #d62828;
+    box-shadow: 0 0 0 3px rgba(214, 40, 40, .15);
+}
+
+.login-input-group .input-group-text {
+    background: #f8f9fa;
+    border: none;
+    color: #d62828;
+    width: 45px;
+    justify-content: center;
+}
+
+.login-input-group .form-control {
+    border: none;
+    padding: 12px 15px;
+}
+
+.login-input-group .form-control:focus {
+    box-shadow: none;
+}
+
+.login-toggle-pass {
+    background: #f8f9fa;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    margin: 22px 0 28px;
+    font-size: 14px;
+}
+
+.login-options .login-remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 10px;
+}
+
+.login-options .login-remember .form-check-input {
+    margin: 0;
+}
+
+.login-options .login-remember .form-check-label {
+    margin: 0;
+}
+
+.login-options .login-register-link {
+    text-align: right;
+}
+
+.login-options .form-check-input:checked {
+    background-color: #d62828;
+    border-color: #d62828;
+}
+
+.login-options a {
+    color:#d62828;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #d62828;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgba(214, 40, 40, .3);
+}
+
+.login-btn:hover {
+    background: #b30000;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(214, 40, 40, .4);
+}
+
+@media (max-width: 576px) {
+    .login-back {
+        margin-left: 15px;
+    }
+}
