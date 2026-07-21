@@ -253,16 +253,6 @@ Download PDF
 
 </a>
 
-<a href="#"
-
-class="btn btn-outline-danger btn-lg">
-
-<i class="fa-solid fa-file"></i>
-
-Download SVG
-
-</a>
-
 </div>
 
 <hr class="my-4">

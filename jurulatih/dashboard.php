@@ -61,14 +61,14 @@
 
                 <li class="nav-item">
                     <a class="nav-link"
-                       href="../maklumat/index.html">
+                       href="../maklumat/index.php">
                         Maklumat KVSkills
                     </a>
                 </li>
-     
+
                 <li class="nav-item">
                     <a class="nav-link"
-                       href="../index.html">
+                       href="../index.php">
                         Home
                     </a>
                 </li>
@@ -98,203 +98,220 @@
 </section>
 
 <!-- ================= PROFILE ================= -->
-<!-- ================= DAFTAR JURULATIH ================= -->
 
 <section class="container py-5">
-
-    <div class="card shadow-lg border-0 rounded-4">
-
-        <div class="card-body text-center p-5">
-
-            <img src="../assets/images/profile.png"
-                 class="rounded-circle border border-4 border-danger shadow mb-4"
-                 width="140"
-                 height="140">
-
-            <h2 class="fw-bold mb-3">
-
-                Daftar Maklumat Jurulatih
-
-            </h2>
-
-            <p class="text-muted fs-5 mb-4">
-
-                Selamat datang ke Portal Jurulatih KVSkills Hub.
-
-                <br><br>
-
-                Sebelum menggunakan sistem ini, sila lengkapkan
-                maklumat jurulatih terlebih dahulu.
-
-            </p>
-
-            <div class="row justify-content-center mb-4">
-
-                <div class="col-lg-8">
-
-                    <div class="alert alert-warning">
-
-                        <i class="fa-solid fa-circle-info me-2"></i>
-
-                        Maklumat ini hanya perlu diisi sekali sahaja.
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="profil-jurulatih.html"
-               class="btn btn-danger btn-lg px-5 py-3">
-
-                <i class="fa-solid fa-user-plus me-2"></i>
-
-                Daftar Jurulatih
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= MENU ================= -->
-<!-- ================= PROGRESS ================= -->
-
-<section class="container pb-5">
 
 <div class="card shadow border-0">
 
 <div class="card-body">
 
-<h3 class="mb-4">
+<div class="row align-items-center">
 
-Status Pendaftaran
+<div class="col-lg-2 text-center">
 
-</h3>
-
-<div class="progress mb-3" style="height:25px;">
-
-<div class="progress-bar bg-danger"
-
-style="width:25%;">
-
-25%
+<img src="../assets/images/profile.png" class="rounded-circle img-fluid" width="140">
 
 </div>
 
-</div>
+<div class="col-lg-10">
+
+<h3>Muhammad Faris</h3>
+
+<p class="mb-1">
+Jurulatih KV Kuantan
+</p>
+
+<p class="mb-1">
+Bidang :
+<strong>Web Technology</strong>
+</p>
 
 <p class="text-muted">
-
-Lengkapkan maklumat jurulatih untuk meneruskan proses pendaftaran.
-
+Dummy Data (Backend akan datang)
 </p>
 
 </div>
 
 </div>
 
+</div>
+
+</div>
+
 </section>
 
-<!-- ================= LANGKAH ================= -->
+<!-- ================= MENU ================= -->
 
 <section class="container pb-5">
+
+<h2 class="mb-4">
+
+Menu Jurulatih
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<a href="peserta.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h4>Maklumat Peserta</h4>
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="dokumen.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-file-lines"></i>
+
+<h4>Dokumen</h4>
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="jadual.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h4>Jadual</h4>
+
+</a>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<a href="lokasi.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h4>Lokasi</h4>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= AKSES PANTAS ================= -->
+
+<section class="container pb-5">
+
+<h2 class="mb-4">
+
+Maklumat KVSkills
+
+</h2>
 
 <div class="row g-4">
 
 <div class="col-lg-3">
 
-<div class="card shadow border-0 text-center p-4">
+<a href="../maklumat/lokasi.html"
 
-<i class="fa-solid fa-user fa-3x text-danger mb-3"></i>
+class="dashboard-card">
 
-<h5>
+<i class="fa-solid fa-map-location-dot"></i>
 
-1. Daftar Jurulatih
+<h4>Lokasi Pertandingan</h4>
 
-</h5>
-
-<span class="badge bg-warning">
-
-Sedang Dilengkapkan
-
-</span>
-
-</div>
+</a>
 
 </div>
 
 <div class="col-lg-3">
 
-<div class="card shadow border-0 text-center p-4">
+<a href="../maklumat/keputusan.html"
 
-<i class="fa-solid fa-users fa-3x text-secondary mb-3"></i>
+class="dashboard-card">
 
-<h5>
+<i class="fa-solid fa-trophy"></i>
 
-2. Daftar Peserta
+<h4>Keputusan</h4>
 
-</h5>
-
-<span class="badge bg-secondary">
-
-Belum Bermula
-
-</span>
-
-</div>
+</a>
 
 </div>
 
 <div class="col-lg-3">
 
-<div class="card shadow border-0 text-center p-4">
+<a href="../maklumat/peserta.html"
 
-<i class="fa-solid fa-file-arrow-up fa-3x text-secondary mb-3"></i>
+class="dashboard-card">
 
-<h5>
+<i class="fa-solid fa-user-group"></i>
 
-3. Upload Dokumen
+<h4>Senarai Peserta</h4>
 
-</h5>
-
-<span class="badge bg-secondary">
-
-Belum Bermula
-
-</span>
-
-</div>
+</a>
 
 </div>
 
 <div class="col-lg-3">
 
-<div class="card shadow border-0 text-center p-4">
+<a href="../maklumat/logo.html"
 
-<i class="fa-solid fa-paper-plane fa-3x text-secondary mb-3"></i>
+class="dashboard-card">
 
-<h5>
+<i class="fa-solid fa-download"></i>
 
-4. Hantar Penyertaan
+<h4>Muat Turun Logo</h4>
 
-</h5>
-
-<span class="badge bg-secondary">
-
-Belum Bermula
-
-</span>
+</a>
 
 </div>
+
+<div class="col-lg-3">
+
+<a href="../maklumat/soalan.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-file-arrow-down"></i>
+
+<h4>Muat Turun Soalan</h4>
+
+</a>
+
+</div>
+
+<div class="col-lg-3">
+
+<a href="../maklumat/index.html"
+
+class="dashboard-card">
+
+<i class="fa-solid fa-circle-info"></i>
+
+<h4>Portal Maklumat</h4>
+
+</a>
 
 </div>
 
 </div>
 
 </section>
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-dark text-white text-center py-3">
