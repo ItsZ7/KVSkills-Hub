@@ -29,78 +29,87 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow">
-
-    <div class="container">
-
-        <a class="navbar-brand fw-bold" href="../index.php">
-            KVSkills Hub
-        </a>
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
-            <span class="navbar-toggler-icon"></span>
-
+    <!-- SIDEBAR TOPBAR (mobile) -->
+    <div class="sidebar-topbar">
+        <a href="../index.php" class="sidebar-topbar-brand">KVSkills Hub</a>
+        <button class="sidebar-toggle" type="button" aria-label="Buka menu">
+            <i class="fa-solid fa-bars"></i>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.php">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">
-                        Maklumat KVSkills
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="lokasi.php">
-                        Lokasi
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="keputusan.php">
-                        Keputusan
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="peserta.php">
-                        Senarai Peserta
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="logo.php">
-                        Muat Turun Logo
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        Muat Turun Soalan
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
     </div>
 
-</nav>
+    <div class="sidebar-overlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <button class="sidebar-close-btn" type="button" aria-label="Tutup sidebar">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <a href="../index.php" class="sidebar-brand">
+            <img src="../assets/images/Logo KVSkills.png" alt="Logo">
+            <span>KVSkills Hub</span>
+        </a>
+
+        <ul class="sidebar-nav">
+
+                <li>
+                    <a href="../index.php" class="sidebar-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Maklumat KVSkills</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../maklumat/lokasi.php" class="sidebar-link">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Lokasi Pertandingan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../maklumat/keputusan.php" class="sidebar-link">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Keputusan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../maklumat/peserta.php" class="sidebar-link">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Senarai Peserta</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../maklumat/logo.php" class="sidebar-link">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Muat Turun Logo</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../maklumat/soalan.php" class="sidebar-link active">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span>Muat Turun Soalan</span>
+                    </a>
+                </li>
+<li>
+                    <a href="../jawatan.php" class="sidebar-link">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Log Masuk</span>
+                    </a>
+                </li>
+
+        </ul>
+    </aside>
+
+
+    <button class="sidebar-reopen-btn" type="button" aria-label="Buka sidebar">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="main-content">
 
 <!-- ================= HEADER ================= -->
 
@@ -345,6 +354,8 @@
     © 2026 KVSkills Hub
 
 </footer>
+
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 

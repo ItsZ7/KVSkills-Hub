@@ -48,7 +48,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-4 fade-in-item">
 
-                    <a href="jurulatih/dashboard.php" class="menu-btn">
+                    <a href="jurulatih/login.php" class="menu-btn">
                         <i class="fa-solid fa-user"></i>
                         Jurulatih
                     </a>
