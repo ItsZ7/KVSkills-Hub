@@ -1,5 +1,2 @@
 <?php
-    // Laman ini dah dipindahkan ke index.php utama
-    header('Location: ../index.php');
-    exit;
-?>
+declare(strict_types=1);require_once dirname(__DIR__).'/config/bootstrap.php';redirect('index.php');

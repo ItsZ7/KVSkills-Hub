@@ -1318,3 +1318,87 @@ font-size:18px;
     }
 
 }
+
+/* ===========================
+   BACKEND / DATA UI
+=========================== */
+.btn-primary{
+    background:var(--navy);
+    border-color:var(--navy);
+}
+.btn-primary:hover,.btn-primary:focus{
+    background:var(--orange-dark);
+    border-color:var(--orange-dark);
+}
+.sidebar-button{
+    width:100%;
+    border:0;
+    background:transparent;
+    text-align:left;
+}
+.event-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:18px;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.3);
+    font-weight:600;
+}
+.stat-card{
+    height:100%;
+    background:#fff;
+    border-radius:18px;
+    padding:24px 16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.09);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:7px;
+}
+.stat-card i{font-size:28px;color:var(--orange)}
+.stat-card strong{font-size:30px;color:var(--navy)}
+.stat-card span{font-size:14px;color:#666}
+.rule-box{
+    border-left:5px solid var(--orange);
+    background:#f8f9fa;
+    border-radius:12px;
+    padding:18px;
+    height:100%;
+}
+.rule-box strong,.rule-box span{display:block}
+.rule-box strong{color:var(--navy);margin-bottom:5px}
+.venue-code{
+    min-width:52px;height:52px;border-radius:14px;background:var(--navy);color:#fff;
+    display:grid;place-items:center;font-weight:700;
+}
+.document-card{
+    background:#fff;border:1px solid #e7e9ef;border-radius:14px;padding:16px;
+    display:flex;justify-content:space-between;align-items:center;gap:15px;height:100%;
+    box-shadow:0 6px 16px rgba(0,0,0,.05);
+}
+.document-card strong,.document-card small{display:block}
+.document-card small{color:#6c757d;margin-top:4px}
+.status{
+    display:inline-block;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700;
+    text-transform:capitalize;
+}
+.status-pending,.status-submitted{background:#fff3cd;color:#664d03}
+.status-active,.status-approved{background:#d1e7dd;color:#0f5132}
+.status-disabled,.status-rejected{background:#f8d7da;color:#842029}
+.status-draft{background:#e2e3e5;color:#41464b}
+.profile-list{display:grid;grid-template-columns:100px 1fr;gap:8px 12px}
+.profile-list dt{color:#6c757d;font-weight:500}.profile-list dd{margin:0;font-weight:600}
+.wide-form{max-width:760px}
+.helper-field{display:none}
+.table thead th{white-space:nowrap}
+@media(max-width:767px){
+    .document-card{align-items:flex-start;flex-direction:column}
+    .profile-list{grid-template-columns:1fr}.profile-list dd{margin-bottom:8px}
+}
+.status-registration{background:#cfe2ff;color:#084298}
+.status-ongoing{background:#cff4fc;color:#055160}
+.status-completed{background:#d1e7dd;color:#0f5132}
+.status-archived{background:#e2e3e5;color:#41464b}
